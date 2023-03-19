@@ -1,8 +1,8 @@
 const usersBlock = document.getElementById('usersBlock')
 function loadAndAppendUsers() {
     fetchJson('https://jsonplaceholder.typicode.com/users')
-        .then(value => {
-            usersBlock.append(...value.map(user=>createUserBlock(user)));
+        .then(users => {
+            usersBlock.append(...users.map(user=>createUserBlock(user)));
         })
 }
 async function fetchJson(link) {
@@ -11,11 +11,11 @@ async function fetchJson(link) {
 }
 function createUserBlock(item) {
     const userBlock =  document.createElement('div');
+    userBlock.classList.add('userBlock');
     const a = document.createElement('a')
     a.href = 'user-details.html?data=' + JSON.stringify(item);
     a.setAttribute('target', '_blank');
     a.classList.add('a')
-    userBlock.classList.add('userBlock');
     userBlock.innerHTML = `<h1>${item.id}:  ${item.name}</h1>`
     a.innerText = 'detail...';
     userBlock.appendChild(a);

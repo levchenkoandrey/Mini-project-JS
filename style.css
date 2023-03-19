@@ -3,13 +3,17 @@
     flex-wrap: wrap;
 }
 .userBlock{
-    width: 45%;
+    width: 40%;
     padding: 10px;
     margin: 10px auto;
-    border: 2px solid blue;
+    border-bottom: 1px solid #CED8E1;
     font-size: 25px;
     text-align: center;
     border-radius: 10px;
+}
+.userBlock:hover{
+    background-color: ghostwhite;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .a{
     border: 1px solid;
@@ -19,6 +23,7 @@
     margin: 10px auto;
     text-decoration: none;
     color: #989595;
+    transition: .2s linear;
 }
 .a:hover{
     background-color: #CED8E1;
@@ -47,6 +52,26 @@ width: 17%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.post{
+    background-color: white;
+    border: 1px solid #CED8E1;
+}
+.pagination{
+    width: 9%;
+    min-height: 40px;
+    font-size: medium;
+    margin: 30px;
+    padding: 5px;
+}
+.prev{
+    border-end-end-radius: inherit;
+}
+.next{
+    border-end-start-radius: inherit;
+}
+.pagination:hover{
+    cursor: pointer;
 }
 .comment, p{
     width: 22%;

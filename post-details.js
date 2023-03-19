@@ -37,14 +37,13 @@ function showComments() {
     const post = getPost();
     const prev = document.createElement("button");
     const next = document.createElement("button");
-    prev.classList.add('prevPost');
-    next.classList.add('nextPost');
+    prev.classList.add('pagination','prev');
+    next.classList.add('pagination','next');
     prev.innerText = 'Show prev Post';
     next.innerText = 'Show next Post';
 
     fetchJson(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
         .then(comments => {
-            console.log(comments)
             let page = 1;
             prev.addEventListener('click', () => handler(comments, page -= 1));
             next.addEventListener('click', () => handler(comments, page += 1));
@@ -74,7 +73,7 @@ function showComments() {
 }
 function createComment(comment) {
     const commentElement = document.createElement('div');
-    commentElement.classList.add('userBlock', 'comment');
+    commentElement.classList.add('userBlock', 'comment', 'post');
     commentElement.innerHTML = comment.body.charAt(0).toUpperCase() + comment.body.slice(1);
     return commentElement;
 }
