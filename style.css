@@ -1,0 +1,89 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.userBlock{
+    width: 45%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid blue;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+.a{
+    border: 1px solid;
+    border-radius: 5px;
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    color: #989595;
+}
+.a:hover{
+    background-color: #CED8E1;
+    color: #0F2A3D;
+}
+.detailsBlock{
+    width: 95%;
+    font-size: 20px;
+}
+.show_posts{
+    width: 99%;
+    font-size: 30px;
+    padding: 10px;
+}
+.show_posts:hover{
+    cursor: pointer;
+}
+.postsBlock{
+    width: 100%;
+}
+.postBlock{
+width: 17%;
+}
+.position{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comment, p{
+    width: 22%;
+    text-align: start;
+}
+p{
+    margin: 0 auto;
+    width: 70%;
+}
+
+
+
+
+
+.postTitle{
+    width: 18%;
+    border: 2px solid blue;
+    color: #0F2A3D;
+
+}
+.postTitle:hover{
+    background-color: white;
+}
+p{
+    font-size: 30px;
+}
+span{
+    display: block;
+}
+
+/*ul{*/
+/*    list-style: none;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+/*ul > li{*/
+/*    border: 2px solid;*/
+/*    width: 18%;*/
+/*    display: inline-block;*/
+/*}*/
