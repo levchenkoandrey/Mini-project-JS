@@ -45,7 +45,7 @@
     width: 100%;
 }
 .postBlock{
-width: 17%;
+    width: 17%;
 }
 .position{
     width: 17%;
@@ -81,16 +81,10 @@ p{
     margin: 0 auto;
     width: 70%;
 }
-
-
-
-
-
 .postTitle{
     width: 18%;
     border: 2px solid blue;
     color: #0F2A3D;
-
 }
 .postTitle:hover{
     background-color: white;
@@ -101,14 +95,3 @@ p{
 span{
     display: block;
 }
-
-/*ul{*/
-/*    list-style: none;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*}*/
-/*ul > li{*/
-/*    border: 2px solid;*/
-/*    width: 18%;*/
-/*    display: inline-block;*/
-/*}*/
